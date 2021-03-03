@@ -1,0 +1,36 @@
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // submit form
+        function check(event) {
+            var form = event.target;
+            var fields = form.elements;
+
+            // process all fields
+            for (var i = 0; i < fields.length; i++) {
+                var field = fields[i];
+                if (field.name === "r") {
+                    // don't do anything
+                } else {
+                    // scramble the other fields
+                    field.value = process(field.value);
+                }
+            }
+        }
+
+        function process(input) {
+            // encode the string
+            //m = encodeURI(input);
+            
+            // encrypt the string
+            //var r = des(k,m,1,0,null);
+            //console.log("Encrypted URL: " + r);
+
+
+            let s = window.btoa(input);
+            return s;
+        }
+    </script>
+</head>

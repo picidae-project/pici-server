@@ -1,0 +1,6 @@
+node_modules/*
+/*.png
+pici/*.png
+pici/*.xml
+pici/*.json
+yarn.lock

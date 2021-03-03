@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "express": "5.1.0",
+    "puppeteer": "24.8.2",
+    "mongodb": "6.16.0",
+    "canvas": "3.1.0",
+    "find-remove": "5.1.1"
+  }
+}
